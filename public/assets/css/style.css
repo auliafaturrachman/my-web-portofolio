@@ -319,4 +319,21 @@ aside li {
   #home h1 {
     font-size: 40px;
   }
+
+  #project .title-box .column:nth-child(1) {
+    flex: 1 1 25%;
+  }
+
+  #project .title {
+    font-size: 24px;
+  }
+
+  #project .subtitle {
+    display: none;
+  }
+
+  #project .portofolio {
+    width: 345px;
+    height: 240px;
+  }
 }
