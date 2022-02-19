@@ -347,6 +347,7 @@ aside li {
 @media (max-width: 480px) {
   header,
   footer,
+  aside,
   #home,
   #skill,
   #project,
