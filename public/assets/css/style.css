@@ -234,6 +234,11 @@ button.btn-toggle > svg > path {
   font-size: 40px;
 }
 
+#skill .box:hover a,
+#skill .box:hover a > span {
+  color: #fff;
+}
+
 /* PROJECT */
 
 #project .title-box {
@@ -422,12 +427,20 @@ aside li {
     height: 200px;
   }
 
+  #contact .column {
+    flex: 1 1 100%;
+  }
+
   #contact h2 {
     font-size: 24px;
   }
 
   #contact p {
     display: none;
+  }
+
+  #contact .box {
+    margin-bottom: 20px;
   }
 
   aside ul {
