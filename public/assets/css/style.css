@@ -146,7 +146,7 @@ button {
   text-transform: uppercase;
   vertical-align: middle;
   cursor: pointer;
-  background-color: #38627f;
+  background-color: #0290b9;
   color: #fff;
   border: 1px solid transparent;
   padding: 10px 30px;
@@ -181,7 +181,7 @@ button.btn-toggle > svg > path {
 }
 
 #home span {
-  color: #38627f;
+  color: #0290b9;
   font-weight: 700;
   margin-bottom: 16px;
   font-family: "Secular", sans-serif;
@@ -202,7 +202,7 @@ button.btn-toggle > svg > path {
 }
 
 #skill .box:hover {
-  background-color: #38627f;
+  background-color: #0290b9;
 }
 
 #skill svg,
@@ -212,7 +212,7 @@ button.btn-toggle > svg > path {
 }
 
 #skill svg > path {
-  fill: #38627f;
+  fill: #0290b9;
 }
 
 #skill .box:hover svg > path {
@@ -227,6 +227,7 @@ button.btn-toggle > svg > path {
 #skill a > span {
   font-weight: 700;
   letter-spacing: 2px;
+  color: #0290b9;
 }
 
 #skill a > span {
@@ -267,7 +268,7 @@ button.btn-toggle > svg > path {
 
 #project .body-box a,
 #project .body-box span {
-  color: #38627f;
+  color: #0290b9;
   line-height: 0;
 }
 
