@@ -14,6 +14,11 @@ a {
   color: #fff;
 }
 
+p,
+span {
+  font-size: 14px;
+}
+
 a {
   text-decoration: none;
 }
@@ -28,6 +33,7 @@ header {
 
 header,
 footer,
+aside,
 #home,
 #skill,
 #project,
@@ -68,6 +74,20 @@ nav > a {
 
 .nav-toggle {
   display: none;
+}
+
+.nav-collapse {
+  display: none;
+}
+
+.nav-collapse.show {
+  display: block;
+}
+
+@media (min-width: 992px) {
+  .nav-collapse {
+    display: block;
+  }
 }
 
 #content {
@@ -120,6 +140,21 @@ button {
   border: 1px solid transparent;
   padding: 10px 30px;
   font-size: 14px;
+}
+
+@media (min-width: 992px) {
+  button.btn-toggle {
+    display: none;
+  }
+}
+
+button.btn-toggle {
+  padding: 25px 30px;
+  background-color: transparent;
+}
+
+button.btn-toggle > svg > path {
+  fill: #fff;
 }
 
 /* HOME */
@@ -287,8 +322,22 @@ aside .column {
   text-align: center;
 }
 
+aside .box {
+  background-color: #1e1e1e;
+  margin-left: 8px;
+  margin-right: 8px;
+  padding: 40px 30px;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
 aside ul {
   list-style-type: none;
+  margin-bottom: 0;
 }
 
 aside li {
@@ -335,5 +384,13 @@ aside li {
   #project .portofolio {
     width: 345px;
     height: 240px;
+  }
+
+  #contact h2 {
+    font-size: 24px;
+  }
+
+  #contact p {
+    display: none;
   }
 }
