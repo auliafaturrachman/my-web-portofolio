@@ -72,6 +72,9 @@ nav > a {
   padding: 20px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.nav-brand {
   flex: 1 1 50%;
 }
 
@@ -85,7 +88,7 @@ nav > a {
 
 .nav-collapse {
   display: none;
-  flex: 1 1 50%;
+  flex: 1 1 33%;
 }
 
 .nav-collapse.show {
