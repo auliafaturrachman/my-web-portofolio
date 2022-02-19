@@ -57,11 +57,13 @@ footer {
   width: 100%;
   flex-direction: row;
   justify-content: space-between;
+  flex-flow: wrap;
   margin-bottom: 20px;
 }
 
 nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -70,6 +72,11 @@ nav > a {
   padding: 20px;
   font-weight: 700;
   text-transform: uppercase;
+  flex: 1 1 50%;
+}
+
+.nav-brand svg > path {
+  fill: #fff;
 }
 
 .nav-toggle {
@@ -78,6 +85,7 @@ nav > a {
 
 .nav-collapse {
   display: none;
+  flex: 1 1 50%;
 }
 
 .nav-collapse.show {
@@ -151,6 +159,7 @@ button {
 button.btn-toggle {
   padding: 25px 30px;
   background-color: transparent;
+  flex: 1 1 50%;
 }
 
 button.btn-toggle > svg > path {
@@ -338,6 +347,7 @@ aside img {
 aside ul {
   list-style-type: none;
   margin-bottom: 0;
+  text-align: center;
 }
 
 aside li {
@@ -354,6 +364,27 @@ aside li {
   #contact {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  footer {
+    padding: 8px 25px;
+  }
+
+  .nav-collapse {
+    display: none;
+    flex: 1 1 100%;
+  }
+
+  .nav-brand {
+    flex: 1 1 65%;
+  }
+
+  nav > a {
+    flex: 1 1 100%;
+  }
+
+  button.btn-toggle {
+    flex: 1 1 25%;
   }
 
   #home .column > * {
@@ -393,5 +424,9 @@ aside li {
 
   #contact p {
     display: none;
+  }
+
+  aside ul {
+    text-align: left;
   }
 }
