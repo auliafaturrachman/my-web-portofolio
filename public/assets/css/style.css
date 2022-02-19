@@ -1,0 +1,317 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Secular+One&display=swap);
+body {
+  background-color: #111;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+span,
+p,
+a {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0;
+}
+
+header {
+  position: relative;
+}
+
+header,
+footer,
+#home,
+#skill,
+#project,
+#contact {
+  padding: 50px 10em;
+}
+
+footer {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #1e1e1e;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-brand,
+nav > a {
+  padding: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+article:nth-child(odd) {
+  background: #111;
+}
+
+article:nth-child(even) {
+  background: #181818;
+}
+
+.column {
+  flex: 1 1 25%;
+}
+
+@media (max-width: 700px) {
+  .column {
+    flex: 1 1 33.33%;
+  }
+}
+
+@media (max-width: 400px) {
+  .column {
+    flex: 1 1 50%;
+  }
+}
+
+button {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #38627f;
+  color: #fff;
+  border: 1px solid transparent;
+  padding: 10px 30px;
+  font-size: 14px;
+}
+
+/* HOME */
+
+#home .column > img {
+  width: 400px;
+}
+
+#home h1 {
+  font-size: 60px;
+  font-family: "Secular", sans-serif;
+}
+
+#home span {
+  color: #38627f;
+  font-weight: 700;
+  margin-bottom: 16px;
+  font-family: "Secular", sans-serif;
+}
+
+#home p,
+#skill p {
+  line-height: 25px;
+}
+
+/* SKILL */
+
+#skill .box {
+  background-color: #1e1e1e;
+  margin-left: 8px;
+  margin-right: 8px;
+  padding: 40px 30px;
+}
+
+#skill .box:hover {
+  background-color: #38627f;
+}
+
+#skill svg,
+#skill svg > path {
+  width: 80px;
+  height: 80px;
+}
+
+#skill svg > path {
+  fill: #38627f;
+}
+
+#skill .box:hover svg > path {
+  fill: #fff;
+}
+
+#skill h2 {
+  font-family: "Secular", sans-serif;
+}
+
+#skill a,
+#skill a > span {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+#skill a > span {
+  font-size: 40px;
+}
+
+/* PROJECT */
+
+#project .title-box {
+  padding: 20px 40px;
+}
+
+#project .title {
+  font-size: 35px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+#project .subtitle {
+  font-size: 12px;
+}
+
+#project .title-box .column:nth-child(1) {
+  flex: 1 1 75%;
+}
+
+#project .title-box .box {
+  text-align: right;
+}
+
+#project .body-box .box {
+  padding: 20px 25px;
+}
+
+#project .body-box h2 {
+  margin-bottom: 0;
+}
+
+#project .body-box a,
+#project .body-box span {
+  color: #38627f;
+  line-height: 0;
+}
+
+#project .body-box span {
+  font-size: 40px;
+}
+
+#project .portofolio {
+  width: 450px;
+  height: 250px;
+  background-color: #fff;
+  background-position: top;
+  transition: ease-in-out 8s;
+  margin: 0 auto;
+}
+
+#project .portofolio1 {
+  background-image: url("../img/portofolio-1.png");
+  background-size: cover;
+}
+
+#project .portofolio2 {
+  background-image: url("../img/portofolio-2.png");
+  background-size: cover;
+}
+
+#project .portofolio3 {
+  background-image: url("../img/portofolio-3.png");
+  background-size: cover;
+}
+
+#project .portofolio4 {
+  background-image: url("../img/portofolio-4.png");
+  background-size: cover;
+}
+
+#project .portofolio:hover {
+  background-position: bottom;
+}
+
+/* CONTACT */
+
+#contact .column {
+  flex: 1 1 25%;
+}
+
+#contact .contact-box {
+  padding: 20px 40px;
+  background-color: #1e1e1e;
+}
+
+#contact h2 {
+  font-size: 40px;
+  line-height: 45px;
+}
+
+#contact .box {
+  text-align: center;
+}
+
+/* ASIDE */
+
+aside .column {
+  text-align: center;
+}
+
+aside ul {
+  list-style-type: none;
+}
+
+aside li {
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  header,
+  footer,
+  #home,
+  #skill,
+  #project,
+  #contact {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #home .column > * {
+    margin: 0 10%;
+    margin-bottom: 20px;
+  }
+
+  #home .column > img {
+    width: 300px;
+    margin-right: 0;
+  }
+
+  #home h1 {
+    font-size: 40px;
+  }
+}

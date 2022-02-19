@@ -1,0 +1,11 @@
+{
+  "name": "web-portofolio-aulia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Aulia Faturrachman",
+  "license": "ISC"
+}
