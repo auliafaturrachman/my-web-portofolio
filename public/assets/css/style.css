@@ -75,7 +75,7 @@ nav > a {
 }
 
 .nav-brand {
-  flex: 1 1 50%;
+  flex: 1 1 40%;
 }
 
 .nav-brand svg > path {
@@ -88,7 +88,7 @@ nav > a {
 
 .nav-collapse {
   display: none;
-  flex: 1 1 33%;
+  flex: 1 1 40%;
 }
 
 .nav-collapse.show {
