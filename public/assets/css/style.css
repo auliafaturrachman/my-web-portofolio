@@ -410,6 +410,10 @@ aside li {
     font-size: 40px;
   }
 
+  #skill .column {
+    flex: 1 1 100%;
+  }
+
   #project .title-box .column:nth-child(1) {
     flex: 1 1 25%;
   }
